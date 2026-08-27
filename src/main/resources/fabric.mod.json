@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "fire-sword-mod",
+	"version": "${version}",
+	"name": "Fire Sword Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fire-sword-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.github.sergioacena.FireSwordMod"
+		],
+		"client": [
+			"com.github.sergioacena.client.FireSwordModClient"
+		]
+	},
+	"mixins": [
+		"fire-sword-mod.mixins.json",
+		{
+			"config": "fire-sword-mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
