@@ -1,5 +1,7 @@
 package com.github.sergioacena;
 
+import com.github.sergioacena.item.ModItems;
+
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -21,7 +23,9 @@ public class FireSwordMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Fire Sword Mod cargado!");
+
+		ModItems.initialize();
 	}
 
 	public static Identifier id(String path) {

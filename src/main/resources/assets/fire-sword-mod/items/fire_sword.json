@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "fire-sword-mod:item/fire_sword"
+  }
+}
